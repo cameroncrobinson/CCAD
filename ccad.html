@@ -5,7 +5,11 @@
     <title>CCAD</title>
     <link rel="shortcut icon" href="assets/Logo-stoveburner.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style media="screen">
+    .container{
+      margin: 40px 0px 40px 0px;
+    }
     .nav-container{
       width: 100%;
     }
@@ -29,12 +33,16 @@
       background-image: linear-gradient(white, white, red, white);
 
     }
+    body{
+      background-image: linear-gradient(black,white,white,white);
+    }
 
     </style>
   </head>
   <body>
+    <div class="body-container">
     <!--  NAVIGATION-->
-    <div class="nav-container">
+    <!-- <div class="nav-container">
 <ul class="nav animated fadeInDown" role="menubar">
   <li><img src="assets/CCAD logo.jpg" alt="CCAD logo"/ width="100px" height="35px" style="bottom: auto;"></li>
   <li>1</li>
@@ -42,7 +50,7 @@
   <li>3</li>
   <li>4</li>
 </ul>
-  </div>
+  </div> -->
 
 
 <!-- Video set to autoplay with embedded text in carousel -->
@@ -61,7 +69,7 @@
 </div>
 
 <!--  LOGO TEXT AND IMAGE-->
-<div class="main-content" style="display:flex;">
+<div class="main-content" style="display:flex; max-height:1000px;" data-aos="fade-right">
   <div class="" style="flex:1;">
 
 
@@ -73,7 +81,7 @@
   </div>
 
 </div>
-<div class="main-content" style="display:flex;">
+<div class="main-content" style="display:flex;" data-aos="fade-left">
   <div class="" style="flex:1;">
     <img src="assets/SpringArtFair2019-220-edits79.jpg" alt="a woman's hands" width="100%;">
   </div>
@@ -92,9 +100,13 @@
 <img src="assets/CCAD logo.jpg" alt="CCAD logo"/ width="100px" height="35px" style="bottom: auto;">
 </p>
 </footer>
-
-  </body>
-  <script type="text/javascript" href="index.js">
-
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
+ <script type="text/javascript" href="index.js">
   </script>
+
+    </body>
 </html>
