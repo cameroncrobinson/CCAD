@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
+    .hero-image{
+      background-image: url(assets/20190228_On_Board_Hers_II_02.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     p, button{
       padding: 0px 10px 0px 10px;
     }
@@ -96,16 +102,24 @@ p{
     transform: translateY(-5px);
   }
 }
+
+footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
     </style>
   </head>
   <body>
-    <section>
-<p>culture and commerce around the world and in our own backyard.</p>
+    <section class="hero-image">
+<p style="font-size:4vw">culture and commerce around the world and in our own backyard.</p>
 <a href="#" class="scroll-down" address="true"></a>
 </section>
 <section class="ok">
   <div class="" style="flex:1;">
-  <video src="assets/FashionSplashVideo.mp4" muted controls width="100%">
+  <video src="assets/FashionSplashVideo.mp4" muted controls width="100%" id="goplay">
 
   </video>
   </div>
@@ -119,31 +133,32 @@ p{
 
 
   <img src="assets/Logo-stoveburner.jpg" alt="CCAD full logo" width="100px" height="100px">
-  <p> CCAD is a place for people whothink differently, care about the larger world,
-     and strive for greater understanding of the human community</p>
+  <p style="font-size:2vw"> CCAD is a place for people who think differently, care about the larger world,
+     and strive for greater understanding of the human community.</p>
   </div>
   <div class="" style="flex:1;">
     <img src="assets/2F6A0260.jpg" alt="people talking behind an art piece" width="100%;">
   </div>
 
 </div>
-<div class="main-content" style="display:flex;" data-aos="fade-left">
+<div class="main-content" style="display:flex;">
   <div class="" style="flex:1;">
     <img src="assets/SpringArtFair2019-220-edits79.jpg" alt="a woman's hands" width="100%;">
   </div>
   <div class="" style="flex:1;">
   <img src="assets/Logo-stoveburner.jpg" alt="CCAD full logo" width="100px" height="100px">
-  <p> Home is where you know you’re cherished — and where you hangyour best clothes.
-     Columbus is home.Columbus is fashion</p>
+  <p style="font-size:2vw"> Home is where you know you’re cherished — and where you hang your best clothes.
+     Columbus is home. Columbus is fashion.</p>
   </div>
 
 
 </div>
-<div class="" data-aos="fade-up">
+<div class="" align="center" >
 <img src="assets/skyline.gif" alt="" style="display:block; margin:auto;">
+<p >Learn more about our fashion show</p>
 </div>
-<footer>
-  <p>copyright:2019
+<footer align="center">
+  <p>
 <img src="assets/CCAD logo.jpg" alt="CCAD logo"/ width="100px" height="35px" style="bottom: auto;">
 </p>
 </footer>
@@ -154,9 +169,11 @@ p{
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script type="text/javascript">
+const clickPlay = document.getElementById('goplay');
   $(function() {
    $('.scroll-down').click (function() {
      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+     clickPlay.play();
      return false;
    });
  });
