@@ -3,116 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style media="screen">
-    .hero-image{
-      background-image: url(assets/20190228_On_Board_Hers_II_02.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    p, button{
-      padding: 0px 10px 0px 10px;
-    }
-      body {
-        background-image: linear-gradient(black,white,white,white);
-}
-
-*,
-:after,
-:before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  height: 100vh;
-  width: 100%;
-  display: table;
-
-}
-section.ok{
-  background-color: #555;
-}
-
-p{
-  color: teal;
-  font-family: arial;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -16px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFF;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  transform: scale(1)
-}
-
-.scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
-}
-
-@keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-
-footer{
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;
-}
-    </style>
+  <link rel="stylesheet" href="master.css">
   </head>
   <body>
+    <!--  TOP IMAGE -->
     <section class="hero-image">
 <p style="font-size:4vw">culture and commerce around the world and in our own backyard.</p>
 <a href="#" class="scroll-down" address="true"></a>
@@ -151,15 +45,27 @@ footer{
      Columbus is home. Columbus is fashion.</p>
   </div>
 
-
+<!-- GIF AND BUTTON -->
 </div>
-<div class="" align="center" >
-<img src="assets/skyline.gif" alt="" style="display:block; margin:auto;">
-<p >Learn more about our fashion show</p>
+<div class="" align="center" style="display:flex;">
+  <div class="btn" style="flex:1;">
+  <div class="">
+    <p style="font-size:2vw">The CCAD Fashion Show is back and better than ever as it makes its return to the newly renovated Columbus College of Art & Design campus this spring.</p>
+</div>
+    <p id="fashion-btn"style="font-size:2vw"><a href="https://eventgrid.com/Events/39400/2019-ccad-fashion-show/Dates/60537" target="_blank">Ticket Purchases Now available</a></p>
+  </div>
+  <div class="" style="flex:1;">
+<img src="assets/skyline.gif" alt="" width="100%;">
+  </div>
+
+
+
 </div>
 <footer align="center">
   <p>
+    <a href="https://www.ccad.edu/" target="_blank">
 <img src="assets/CCAD logo.jpg" alt="CCAD logo"/ width="100px" height="35px" style="bottom: auto;">
+</a>
 </p>
 </footer>
 </div>
